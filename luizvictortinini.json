@@ -1,102 +1,111 @@
-
 {
     "openapi": "3.0.0",
     "info": {
-      "title": "Portfólio de Arquiteto de Software",
-      "description": "API de portfólio para exibir minhas habilidades, projetos e experiência profissional.",
-      "version": "1.0.0"
+        "title": "Luiz Victor Tinini",
+        "description": "<p>🌐 <strong>LinkedIn:</strong> <a href='https://www.linkedin.com/in/luizvictortinini/' target='_blank'>https://www.linkedin.com/in/luizvictortinini/</a></p>\
+                  <p>💻 <strong>GitHub:</strong> <a href='https://github.com/luizvictortinini' target='_blank'>https://github.com/luizvictortinini</a></p>\
+                  <p>📸 <strong>Instagram:</strong> <a href='https://instagram.com/luizvictortinini' target='_blank'>https://instagram.com/luizvictortinini</a></p>\
+                  <p>📧 <strong>Email:</strong> <a href='mailto:luiz.tinini@exemplo.com'>luiz.tinini@exemplo.com</a></p>\
+                  <br/>\
+                  <h2>🛠️ About</h2>\
+                  <p><strong>Experience:</strong> Architect of a critical flow of a distributed application in a microservices architecture.</p>\
+                  <p><strong>Focus:</strong> Architect / Tech Lead / Senior Developer</p>\
+                  <h3>🚀 Technologies with Extensive Knowledge:</h3>\
+                  <p>☕ Java 21, 🛡️ Kotlin, 🌱 Spring Boot, ☁️ Azure, 📦 Kubernetes, 🍃 MongoDB, 🐘 PostgreSQL, 🦉 Oracle, 📬 RabbitMQ, 🚀 Redis</p>\
+                  <h3>📚 Technologies for Small Projects and Occasional Study:</h3>\
+                  <p>🐍 Python, 🐹 Go, 🐘 PHP, ☁️ AWS, ⚙️ Jenkins, 🅰️ Angular, 📱 Android (Native)</p>\
+                  <h3>🎓 Degrees:</h3>\
+                  <p>Postgraduate in Software and Solutions Architecture; Studying Cybersecurity and Data Governance.</p>\
+                  <h3>🌟 Personal Characteristics:</h3>\
+                  <p>Throughout my life, curiosity has been my main drive, pushing me to continuously explore and learn.</p>\
+                  <p>In the world of technology, I believe anything is possible, as long as the risks are aligned with the stakeholders. This optimistic mindset drives my daily work.</p>\
+                  <p>I see architecture not as good or bad, but as efficient when it meets business requirements. Efficiency is the key measure.</p>\
+                  <p>Choosing a technology goes beyond current trends. A careful analysis of multiple factors is essential for making informed decisions about languages and frameworks.</p>",
+        "version": "First Release: June 1995"
     },
     "paths": {
-      "/skills": {
-        "get": {
-          "summary": "Lista de Habilidades",
-          "description": "Retorna uma lista das principais habilidades técnicas.",
-          "responses": {
-            "200": {
-              "description": "Lista de habilidades",
-              "content": {
-                "application/json": {
-                  "example": {
-                    "skills": [
-                      "Arquitetura de Microserviços",
-                      "Desenvolvimento Android Nativo",
-                      "Integração de APIs REST",
-                      "Docker e Kubernetes",
-                      "CI/CD (Jenkins, GitHub Actions)",
-                      "Banco de Dados SQL e NoSQL"
-                    ]
-                  }
-                }
-              }
+        "/skills": {
+            "get": {
+                "summary": "Lista de Habilidades",
+                "description": "Retorna uma lista das principais habilidades técnicas."
             }
-          }
-        }
-      },
-      "/projects": {
-        "get": {
-          "summary": "Lista de Projetos",
-          "description": "Retorna detalhes sobre os principais projetos desenvolvidos.",
-          "responses": {
-            "200": {
-              "description": "Detalhes dos projetos",
-              "content": {
-                "application/json": {
-                  "example": {
-                    "projects": [
-                      {
-                        "name": "Aplicação Modular Android",
-                        "description": "Aplicação modular com arquitetura limpa baseada em MVVM.",
-                        "technologies": ["Kotlin", "Jetpack", "Retrofit"]
-                      },
-                      {
-                        "name": "Microserviço para Notificações",
-                        "description": "Microserviço escalável para envio de notificações por e-mail e SMS.",
-                        "technologies": ["Java", "Spring Boot", "RabbitMQ"]
-                      },
-                      {
-                        "name": "Sistema de Automação Residencial",
-                        "description": "Sistema de automação para controle de dispositivos IoT em casa.",
-                        "technologies": ["Node.js", "MQTT", "Raspberry Pi"]
-                      }
-                    ]
-                  }
+        },
+        "/projects": {
+            "get": {
+                "summary": "Lista de Projetos",
+                "description": "Retorna detalhes sobre os principais projetos desenvolvidos.",
+                "responses": {
+                    "200": {
+                        "description": "Detalhes dos projetos",
+                        "content": {
+                            "application/json": {
+                                "example": {
+                                    "projects": [
+                                        {
+                                            "name": "Aplicação Modular Android",
+                                            "description": "Aplicação modular com arquitetura limpa baseada em MVVM.",
+                                            "technologies": [
+                                                "Kotlin",
+                                                "Jetpack",
+                                                "Retrofit"
+                                            ]
+                                        },
+                                        {
+                                            "name": "Microserviço para Notificações",
+                                            "description": "Microserviço escalável para envio de notificações por e-mail e SMS.",
+                                            "technologies": [
+                                                "Java",
+                                                "Spring Boot",
+                                                "RabbitMQ"
+                                            ]
+                                        },
+                                        {
+                                            "name": "Sistema de Automação Residencial",
+                                            "description": "Sistema de automação para controle de dispositivos IoT em casa.",
+                                            "technologies": [
+                                                "Node.js",
+                                                "MQTT",
+                                                "Raspberry Pi"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
                 }
-              }
             }
-          }
-        }
-      },
-      "/experience": {
-        "get": {
-          "summary": "Experiência Profissional",
-          "description": "Retorna um resumo da experiência profissional.",
-          "responses": {
-            "200": {
-              "description": "Resumo da experiência",
-              "content": {
-                "application/json": {
-                  "example": {
-                    "experience": [
-                      {
-                        "company": "Tech Solutions",
-                        "role": "Arquiteto de Software",
-                        "years": "2020 - Presente",
-                        "description": "Responsável por arquitetar soluções escaláveis e liderar equipes de desenvolvimento."
-                      },
-                      {
-                        "company": "Innovatech",
-                        "role": "Desenvolvedor Sênior",
-                        "years": "2017 - 2020",
-                        "description": "Desenvolvimento de aplicações Android e integração de APIs REST."
-                      }
-                    ]
-                  }
+        },
+        "/experience": {
+            "get": {
+                "summary": "Experiência Profissional",
+                "description": "Retorna um resumo da experiência profissional.",
+                "responses": {
+                    "200": {
+                        "description": "Resumo da experiência",
+                        "content": {
+                            "application/json": {
+                                "example": {
+                                    "experience": [
+                                        {
+                                            "company": "Tech Solutions",
+                                            "role": "Arquiteto de Software",
+                                            "years": "2020 - Presente",
+                                            "description": "Responsável por arquitetar soluções escaláveis e liderar equipes de desenvolvimento."
+                                        },
+                                        {
+                                            "company": "Innovatech",
+                                            "role": "Desenvolvedor Sênior",
+                                            "years": "2017 - 2020",
+                                            "description": "Desenvolvimento de aplicações Android e integração de APIs REST."
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
                 }
-              }
             }
-          }
         }
-      }
     }
-  }
-  
+}
