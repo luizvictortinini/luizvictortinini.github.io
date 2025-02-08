@@ -3,7 +3,31 @@
     "info": {
       "version": "First Release: June 1995",
       "title": "Luiz Victor Tinini",
-      "description": "🚀 <b>A creative Swagger API representing my projects.</b>"
+        "description": "🚀 <b>A creative Swagger API representing me and my projects.</b> <br><br>
+        👨‍💻 <b>Experience:</b> <br>
+        • Software Architect & Tech Lead with hands-on experience in critical microservice architectures. <br><br>
+
+        🎯 <b>Focus:</b> <br>
+        • Architecture / Tech Lead / Senior Development. <br><br>
+
+        💡 <b>Technologies I excel at:</b> <br>
+        • Java 21, Kotlin, Spring Boot, Azure, Kubernetes, MongoDB, PostgreSQL, Oracle, RabbitMQ, Redis. <br><br>
+
+        🛠️ <b>Occasional Projects & Learning:</b> <br>
+        • Python, Go, AWS, Android, Node, Smart Home Projects <br><br>
+
+        🎓 <b>Education:</b> <br>
+        • Postgraduate in Software Architecture & Solutions. <br>
+        • Postgraduate in Cybersecurity & Data Governance. <br><br>
+
+        🔍 <b>Personal Insights:</b> <br>
+        • Curious at heart, always eager to explore and learn. <br>
+        • I see technology as a world of endless possibilities—when risks are properly managed. <br>
+        • Architecture isn’t about right or wrong; it’s about being efficient and meeting business needs. <br>
+        • Choosing the right technology isn’t just about trends; it’s about making informed decisions based on careful analysis. <br><br>
+
+        🚀 <b>Check my social networks and my projects below</b> <br>"
+
     },
     "paths": {
       "/Linkedin": {
